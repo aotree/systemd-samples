@@ -1,0 +1,10 @@
+[Unit]
+Description = bye daemon
+DefaultDependencies=no
+
+[Service]
+ExecStart = /home/ubuntu/bye/bye.sh
+Type = oneshot
+
+[Install]
+WantedBy = shutdown.target
